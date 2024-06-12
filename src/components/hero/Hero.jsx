@@ -1,12 +1,31 @@
-import React from "react";
+import { React, useEffect, useRef }from "react";
+import Typed from "typed.js";
 
 const Hero = () => {
+  const typedRef = useRef(null);
+
+  useEffect(() => {
+    typedRef.current = new Typed(".auto-type", {
+      strings: [
+        "Web Developer",
+        "MERN Stack Developer"
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+    });
+
+    return () => {
+      typedRef.current.destroy();
+    };
+  }, []);
+
   return (
-    <div className="bg-gray-100 p-10">
+    <div className="bg-gray-100 p-10" id="Home">
       <div className="flex flex-col container mx-auto md:flex-row md:space-x-10 items-center">
-        <div className="w-3/5 text-center md:text-left">
-          <h1 className="text-[35px] font-bold mb-5 font-montserrat ">
-            About Me
+        <div className="w-3/5 w-full md:w-full sm:w-full text-center md:text-left">
+          <h1 className="text-[30px] font-bold mb-5 font-montserrat ">
+            I am <b></b> <span className="auto-type text-[38px] text-[#800080] "></span>
           </h1>
           <p className="text-gray-700 leading-loose font-montserrat text-[17px] font-weight-500">
             As a Passionate MERN stack developer, I specialize in crafting
@@ -25,7 +44,7 @@ const Hero = () => {
             Let's discuss your project
           </button>
         </div>
-        <div className="w-2/5 flex justify-center md:justify-start">
+        <div className="w-2/5 w-full md:w-full sm:w-full flex justify-center md:justify-start mt-10 md:mt-0 sm:mt-10">
           <img
             className="w-48 h-48 rounded-full object-cover mx-auto"
             src="https://placeholder.com/48x48" // Replace with your image

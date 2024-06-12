@@ -8,10 +8,11 @@
   left: 0;
   width: 100%;
   z-index: 1;
-  background-color: #fff; /* or any other background color you prefer */
+  background-color: #000; /* or any other background color you prefer */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   opacity: 0.5;
   transition: 0.3s all ease-in-out;
+  color: #fff;
 }
 
 .sticky + * {

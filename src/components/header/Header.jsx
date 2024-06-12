@@ -1,8 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import '../header/Header.css'
+import React, { useState, useEffect } from "react";
+import "../header/Header.css";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const scroller = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,26 +18,31 @@ const Header = () => {
         setIsSticky(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <div
-      className={`mainDiv ${isSticky? 'sticky' : ''}`}>
-      <div className='widthDiv'>
+    <div className={`mainDiv ${isSticky ? "sticky" : ""}`}>
+      <div className="widthDiv">
         <header>
-          <ul class='flex justify-center gap-x-5 py-[13px] px-0 font-montserrat text-[18px]'>
+          <ul class="flex justify-center gap-x-5 py-[13px] px-0 font-montserrat text-[18px]">
             <li>
-              <a href="/">Home</a>
+              <button onClick={() => scroller("Home")} className="border-none">Home</button>
             </li>
             <li>
-              <a href="/">About</a>
+              <button onClick={() => scroller("About")}>About</button>
             </li>
             <li>
-              <a href="/">Projects</a>
+              <button onClick={() => scroller("Services")}>Services</button>
+            </li>
+            <li>
+              <button onClick={() => scroller("Project")}>Projects</button>
+            </li>
+            <li>
+              <button onClick={() => scroller("Footer")}>Contact</button>
             </li>
           </ul>
         </header>

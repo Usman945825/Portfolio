@@ -1,17 +1,17 @@
 import React from "react";
 
-const About = () => {
+const Hero = () => {
   return (
-    <div className="bg-gray-100 p-10">
+    <div className="bg-gray-100 p-10" id="About">
       <div className="flex flex-col container mx-auto md:flex-row md:space-x-10 items-center">
-        <div className="w-1/2 flex justify-center md:justify-start">
+        <div className="w-2/5 w-full md:w-full sm:w-full flex justify-center md:justify-start mt-10 md:mt-0 sm:mt-10">
           <img
             className="w-48 h-48 rounded-full object-cover mx-auto"
             src="https://placeholder.com/48x48" // Replace with your image
             alt="About Me"
           />
         </div>
-        <div className="w-1/2 text-center md:text-left">
+        <div className="w-3/5 w-full md:w-full sm:w-full text-center md:text-left">
           <h1 className="text-[35px] font-bold mb-5 font-montserrat ">
             About Me
           </h1>
@@ -37,4 +37,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Hero;

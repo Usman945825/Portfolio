@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="bg-gray-100 p-10" id="About">
+    <div className="bg-white p-10" id="About">
       <div className="flex flex-col container mx-auto md:flex-row md:space-x-10 items-center">
         <div className="w-2/5 w-full md:w-full sm:w-full flex justify-center md:justify-start mt-10 md:mt-0 sm:mt-10">
           <img
@@ -29,7 +29,8 @@ const Hero = () => {
             expectations
           </p>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
-            Let's discuss your project
+           <a href="https://drive.google.com/file/d/1UGVTeY_1VmeiIymp1sG6g7nfCRBjLvyP/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+           Download my CV</a>
           </button>
         </div>
       </div>

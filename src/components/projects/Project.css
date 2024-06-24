@@ -1,0 +1,18 @@
+.slick-prev:before,
+.slick-next:before {
+  font-size: 29px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #c54949;
+}
+.slick-prev {
+  left: -47px;
+}
+.slick-next {
+  right: -41px;
+}
+
+.slick-slider{
+    width: 90%;
+    margin: auto;
+}

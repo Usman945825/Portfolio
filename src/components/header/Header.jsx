@@ -25,7 +25,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`mainDiv ${isSticky ? "sticky" : ""}`}>
+    <div className={`mainDiv bg-black text-white ${isSticky ? "sticky" : ""}`}>
       <div className="widthDiv">
         <header>
           <ul class="flex justify-center gap-x-5 py-[13px] px-0 font-montserrat text-[18px]">

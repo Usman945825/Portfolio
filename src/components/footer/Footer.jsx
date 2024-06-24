@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="mainDiv bg-gray-100 py-[60px]" id="Footer">
+    <div className="mainDiv bg-black text-white py-[60px]" id="Footer">
       <div className="widthDiv flex flex-col container mx-auto md:flex-col lg:flex-row lg:space-x-10 items-center">
         {/* <div className="lg:w-1/3 md:w-full sm:w-full text-center md:text-center">
           <ul>
@@ -63,7 +63,7 @@ const Footer = () => {
               <FontAwesomeIcon
                 icon={faGithub}
                 size="3x"
-                color="#333"
+                color="#fff"
                 className="hover:opacity-70"
               />
             </a>

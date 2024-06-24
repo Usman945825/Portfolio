@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Slider from "react-slick";
 import register from "../../Images/1.png";
 import "slick-carousel/slick/slick.css";
@@ -62,7 +63,11 @@ const Project = () => {
   ];
 
   return (
-    <div className="mainDiv pt-[50px] pb-[50px]" id="Project">
+    <motion.div 
+    initial={{ opacity: 0 }} // initial opacity is 0 (fully transparent)
+    whileInView={{ opacity: 1 }} // animate to opacity 1 (fully visible)
+    transition={{ delay: 0.5, duration: 0.5 }} // delay for 1 second, then animate for 0.5 seconds
+    className="mainDiv pt-[50px] pb-[50px]" id="Project">
       <h1 className="text-[35px] font-bold text-center mb-[60px] font-montserrat">
         Projects
       </h1>
@@ -73,7 +78,7 @@ const Project = () => {
           ))}
         </Slider>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

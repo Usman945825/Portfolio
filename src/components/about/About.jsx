@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="bg-black text-white p-10" id="About">
       <motion.div
-        initial={{ x: -1000, opacity: 0 }} // start from the left side, outside the viewport
+        initial={{ x: 0, opacity: 0 }} // start from the left side, outside the viewport
         whileInView={{ x: 0, opacity: 1 }} // animate to its original position
         transition={{ ease: "linear", delay: 0.2 }}
         className="flex flex-col container mx-auto md:flex-row md:space-x-10 items-center overflow-hidden"
@@ -29,10 +29,10 @@ const About = () => {
           // transition={{ ease: "linear", delay: 0.5 }}
           className="w-3/5 w-full md:w-full sm:w-full text-center md:text-left"
         >
-          <h1 className="text-[35px] font-bold mb-5 font-montserrat ">
+          <h1 className="text-[35px] font-bold mb-5 font-montserrat max-md:text-3xl  max-sm:text-2xl">
             About Me
           </h1>
-          <p className="text-white leading-loose font-montserrat text-[17px] font-weight-500">
+          <p className="text-white leading-loose font-montserrat text-[17px] font-weight-500 max-md:text-xl  max-sm:text-base">
             As a Passionate MERN stack developer, I specialize in crafting
             scalable, efficient, and visually stunning web applications that
             drive business results. With expertise in MongoDB, Express, React,

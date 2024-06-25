@@ -7,10 +7,10 @@ import "slick-carousel/slick/slick-theme.css";
 import "../projects/Project.css";
 
 const ProjectCard = ({ image, title, description }) => (
-  <div className="project-card shadow-md rounded-lg p-4 flex flex-col items-center">
+  <div className="project-card bg-[rgb(14,49,97)] shadow-md rounded-lg p-4 flex flex-col mx-2 items-center">
     <img className="w-full h-58 object-cover mb-4" src={image} alt={title} />
     <h3 className="text-xl font-bold mb-2">{title}</h3>
-    <p className="text-gray-700 text-center">{description}</p>
+    <p className="text-white text-center">{description}</p>
   </div>
 );
 
@@ -67,7 +67,7 @@ const Project = () => {
     initial={{ opacity: 0 }} // initial opacity is 0 (fully transparent)
     whileInView={{ opacity: 1 }} // animate to opacity 1 (fully visible)
     transition={{ delay: 0.5, duration: 0.5 }} // delay for 1 second, then animate for 0.5 seconds
-    className="mainDiv pt-[50px] pb-[50px]" id="Project">
+    className="mainDiv bg-black text-white pt-[50px] pb-[50px]" id="Project">
       <h1 className="text-[35px] font-bold text-center mb-[60px] font-montserrat">
         Projects
       </h1>

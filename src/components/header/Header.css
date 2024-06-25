@@ -1,7 +1,3 @@
-.mainDiv {
-  position: relative; /* add this to make the sticky class work */
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -13,8 +9,4 @@
   opacity: 0.8;
   transition: 0.3s all ease-in-out;
   color: #000;
-}
-
-.sticky + * {
-  padding-top: 60px; /* add this to make space for the sticky header */
 }

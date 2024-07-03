@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import register from "../../Images/1.png";
 import Products from "../../Images/Products Management.png"
+import Bucket from "../../Images/BucketList.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../projects/Project.css";
@@ -56,9 +57,9 @@ const Project = () => {
       description: "Manage and organize your products efficiently with intuitive interface",
     },
     {
-      image: "https://placeholder.com/48x48", // Replace with your image
+      image: Bucket, // Replace with your image
       title: "To-Do List",
-      description: "Slight Info",
+      description: "Stay organized and focused with our easy-to-use To-Do List app.",
     },
     // Add more projects here
   ];

@@ -51,7 +51,7 @@ const Hero = () => {
   </button>
 </motion.div>
 
-<div className="flex lg:justify-center items-center w-full md:w-full sm:w-full md:justify-start mt-10 md:mt-0 sm:mt-10">
+<div className="flex lg:justify-center items-center justify-center w-full md:w-full sm:w-full md:justify-start md:justify-center mt-10 md:mt-0 sm:mt-10">
   <motion.div 
   className="contents"
     initial={{ opacity: 0}}
@@ -59,7 +59,7 @@ const Hero = () => {
     <motion.div 
       initial={{ opacity: 0}}
       animate={{ opacity: 1, transition: {delay: 2.4, duration: 0.4, ease: "easeInOut"}}}
-      className="w-[298px] h-[298px] xl:w-[428px] xl:h-[428px] mix-blend-lighten absolute">
+     className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[428px] lg:h-[428px] xl:w-[428px] xl:h-[428px] mix-blend-lighten absolute">
       <img 
         src={me} 
         alt="SignIn/SignUp" 

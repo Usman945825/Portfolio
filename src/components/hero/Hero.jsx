@@ -1,8 +1,7 @@
 import { React, useEffect } from "react";
 // import developer from "../../Images/developer.jpg";
 import Typed from "typed.js";
-
-import me from "../../Images/me.jpeg";
+import me from "../../Images/me.png";
 import { motion } from "framer-motion";
 
 

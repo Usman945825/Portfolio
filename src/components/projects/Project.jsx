@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import register from "../../Images/1.png";
+import Products from "../../Images/Products Management.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../projects/Project.css";
@@ -47,12 +48,12 @@ const Project = () => {
     {
       image: register,
       title: "SignIn/SignUp",
-      description: "Simple and elegant register and login form",
+      description: "Elegant register and login form designed to provide a hassle-free experience for users",
     },
     {
-      image: "https://placeholder.com/48x48", // Replace with your image
-      title: "Authentication App",
-      description: "Slight Info",
+      image: Products, 
+      title: "Products Management",
+      description: "Manage and organize your products efficiently with intuitive interface",
     },
     {
       image: "https://placeholder.com/48x48", // Replace with your image

@@ -10,7 +10,7 @@ const About = () => {
         transition={{ ease: "linear", delay: 0.2 }}
         className="flex flex-col container mx-auto md:flex-row md:space-x-10 items-center overflow-hidden"
       >
-        <div
+        {/* <div
           // initial={{ x: -1000, opacity: 0 }} // start from the left side, outside the viewport
           // whileInView={{ x: 0, opacity: 1 }} // animate to its original position
           // transition={{ ease: "linear", delay: 0.5 }}
@@ -21,7 +21,7 @@ const About = () => {
             src="https://placeholder.com/48x48" // Replace with your image
             alt="About Me"
           />
-        </div>
+        </div> */}
         <div
           // initial={{ x: 1000, opacity: 0 }} // start from the left side, outside the viewport
           // whileInView={{ x: 0, opacity: 1 }} // animate to its original position

@@ -3,16 +3,22 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import register from "../../Images/1.png";
 import Products from "../../Images/Products Management.png"
-import Bucket from "../../Images/BucketList.png"
+import CarSearch from "../../Images/carsearch.png"
+import Bucket from "../../Images/BucketList.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../projects/Project.css";
 
-const ProjectCard = ({ image, title, description }) => (
+const ProjectCard = ({ image, title, description, link }) => (
   <div className="project-card bg-[rgb(14,49,97)] shadow-md rounded-lg p-4 flex flex-col mx-2 items-center">
     <img className="w-full h-58 object-cover mb-4" src={image} alt={title} />
     <h3 className="text-xl font-bold mb-2">{title}</h3>
     <p className="text-white text-center">{description}</p>
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+        Visit Website
+      </button>
+    </a>
   </div>
 );
 
@@ -42,14 +48,14 @@ const Project = () => {
           slidesToShow: 1,
         },
       },
-    ],
+    ]
   };
 
   const projects = [
     {
       image: register,
       title: "SignIn/SignUp",
-      description: "Elegant register and login form designed to provide a hassle-free experience for users",
+      description: "Elegant register and login form designed to provide hassle-free experience for users",
     },
     {
       image: Products, 
@@ -60,6 +66,12 @@ const Project = () => {
       image: Bucket, // Replace with your image
       title: "To-Do List",
       description: "Stay organized and focused with our easy-to-use To-Do List app.",
+    },
+    {
+      image: CarSearch, // Replace with your image
+      title: "Car Search",
+      description: "A dynamic application that connects potential buyers with the car of their dreams.",
+      link: "https://car-search-psi.vercel.app/",
     },
     // Add more projects here
   ];

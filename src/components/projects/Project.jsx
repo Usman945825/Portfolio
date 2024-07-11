@@ -12,10 +12,10 @@ import "../projects/Project.css";
 const ProjectCard = ({ image, title, description, link }) => (
   <div className="project-card bg-[rgb(14,49,97)] shadow-md rounded-lg p-4 flex flex-col mx-2 items-center">
     <img className="w-full h-58 object-cover mb-4" src={image} alt={title} />
-    <h3 className="text-xl font-bold mb-2">{title}</h3>
+    <h3 className="text-xl text-center font-bold mb-2">{title}</h3>
     <p className="text-white text-center">{description}</p>
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+      <button className="bg-blue-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
         Visit Website
       </button>
     </a>
@@ -65,7 +65,7 @@ const Project = () => {
     {
       image: Bucket, // Replace with your image
       title: "To-Do List",
-      description: "Stay organized and focused with our easy-to-use To-Do List app.",
+      description: "Boost your productivity, stay organized and focused with our easy-to-use To-Do List app.",
     },
     {
       image: CarSearch, // Replace with your image
@@ -81,7 +81,7 @@ const Project = () => {
     initial={{ opacity: 0 }} // initial opacity is 0 (fully transparent)
     whileInView={{ opacity: 1 }} // animate to opacity 1 (fully visible)
     transition={{ delay: 0.5, duration: 0.5 }} // delay for 1 second, then animate for 0.5 seconds
-    className="mainDiv bg-black text-white pt-[50px] pb-[50px]" id="Project">
+    className="mainDiv bg-black text-white pt-[60px] pb-[50px]" id="Project">
       <h1 className="text-[35px] font-bold text-center mb-[60px] font-montserrat">
         Projects
       </h1>

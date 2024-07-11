@@ -3,30 +3,16 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="bg-black text-white p-10" id="About">
+    <div className="bg-black text-white py-20" id="About">
       <motion.div
         initial={{ x: 0, opacity: 0 }} // start from the left side, outside the viewport
         whileInView={{ x: 0, opacity: 1 }} // animate to its original position
         transition={{ ease: "linear", delay: 0.2 }}
         className="flex flex-col container mx-auto md:flex-row md:space-x-10 items-center overflow-hidden"
       >
-        {/* <div
-          // initial={{ x: -1000, opacity: 0 }} // start from the left side, outside the viewport
-          // whileInView={{ x: 0, opacity: 1 }} // animate to its original position
-          // transition={{ ease: "linear", delay: 0.5 }}
-          className="w-2/5 w-full md:w-full sm:w-full flex justify-center md:justify-start mt-10 md:mt-0 sm:mt-10"
-        >
-          <img
-            className="w-48 h-48 rounded-full object-cover mx-auto"
-            src="https://placeholder.com/48x48" // Replace with your image
-            alt="About Me"
-          />
-        </div> */}
+
         <div
-          // initial={{ x: 1000, opacity: 0 }} // start from the left side, outside the viewport
-          // whileInView={{ x: 0, opacity: 1 }} // animate to its original position
-          // viewport={{ once: true, threshold: 0.5}}
-          // transition={{ ease: "linear", delay: 0.5 }}
+
           className="w-3/5 w-full md:w-full sm:w-full text-center md:text-left"
         >
           <h1 className="text-[35px] font-bold mb-5 font-montserrat max-md:text-3xl  max-sm:text-2xl">

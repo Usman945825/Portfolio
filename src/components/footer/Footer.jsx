@@ -1,86 +1,62 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+  FaInstagram,
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="mainDiv bg-black text-white py-[60px]" id="Footer">
-      <div className="widthDiv flex flex-col container mx-auto md:flex-col lg:flex-row lg:space-x-10 items-center">
-        {/* <div className="lg:w-1/3 md:w-full sm:w-full text-center md:text-center">
-          <ul>
-            <li>
-              <a href="/" className="font-montserrat text-[20px]">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/" className="font-montserrat text-[20px]">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="/" className="font-montserrat text-[20px]">
-                Projects
-              </a>
-            </li>
-          </ul>
-        </div> */}
-        <div className="lg:w-full flex flex-col justify-start align-start md:w-full md:justify-center text-left sm:w-full  md:text-left">
-          <div className="projectDetail pb-[40px]">
-            <h2 className="font-montserrat text-[28px]">
-              Want To Discuss A Project?
-            </h2>
-            <h2 className="font-montserrat text-[24px] border-b border-#333-400">
-              Let's Work Together On Your Project.
-            </h2>
-          </div>
-          <h2 className="font-montserrat text-[28px]">
+    <div className="bg-gray-900 text-white p-10">
+      <div className="flex flex-col container mx-auto md:flex-row md:space-x-10 items-center overflow-hidden">
+        <div className="w-[60%] w-full md:w-full sm:w-full text-center md:text-left">
+          <h2 className="text-4xl font-bold mb-4 text-left">Get in Touch</h2>
+          <p className="text-lg mb-8 text-left">
+            Want To Discuss A Project? Let's Work Together On Your Project. <br />
             Connect With Me On Social Media:
-          </h2>
-          <div className="icons flex flex-row gap-x-4 mt-[8px]">
-            <a
-              href="https://www.linkedin.com/in/hafiz-qirab-jaffar-61b248242/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                size="3x"
-                color="#0072b1"
-                className="hover:opacity-70"
-              />
-            </a>
+          </p>
+          <div className="flex flex-row justify-start mt-8 text-[40px] ">
             <a
               href="https://github.com/Qirab14"
-              target="_blank"
-              rel="noopener noreferrer"
+              className="mr-4 hover:text-gray-700"
             >
-              <FontAwesomeIcon
-                icon={faGithub}
-                size="3x"
-                color="#fff"
-                className="hover:opacity-70"
-              />
+              <FaGithub />
             </a>
-
-            <FontAwesomeIcon
-              icon={faFacebook}
-              size="3x"
-              color="#4267B2"
-              className="hover:opacity-70"
-            />
-            <FontAwesomeIcon
-              icon={faInstagram}
-              size="3x"
-              color="#E1306C"
-              className="hover:opacity-70"
-            />
+            <a
+              href="https://www.linkedin.com/in/hafiz-qirab-jaffar-61b248242/"
+              className="mr-4 hover:text-blue-700"
+            >
+              <FaLinkedin />
+            </a>
+            <a href="/" className="mr-4 hover:text-blue-700">
+              <FaFacebook />
+            </a>
+            <a href="/" className="mr-4 hover:text-blue-700">
+              <FaInstagram />
+            </a>
           </div>
+        </div>
+        <div
+          className="w-[40%] flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 max-md:mt-4 max-sm:mt-4" id="Footer"
+        >
+          <a
+            href="mailto:qirab14@gmail.com"
+            className="flex items-center
+            bg-gray-800 hover:bg-gray-700 h-[150px] text-white font-bold py-3 px-8 text-center
+             focus:outline-none focus:shadow-outline
+            shadow-blue-500 shadow-lg hover:shadow-none
+            "
+          >
+            <div
+              className="flex flex-col items-center
+            "
+            >
+              <FaEnvelope />
+              qirab14@gmail.com
+            </div>
+          </a>
         </div>
       </div>
     </div>

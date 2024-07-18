@@ -36,7 +36,7 @@ const Hero = () => {
   <h1 className="text-4xl font-bold mb-5 font-montserrat max-md:text-3xl  max-sm:text-xl ">
     Hello <br />
     <span className="text-purple-500">
-      I am Hafiz Qirab Jaffar
+      I am Muhammad Usman
     </span>
   </h1>
     <span className="auto-type text-3xl max-md:text-2xl  max-sm:text-lg"></span>

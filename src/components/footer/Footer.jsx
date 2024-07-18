@@ -19,13 +19,13 @@ const Footer = () => {
           </p>
           <div className="flex flex-row justify-start mt-8 text-[40px] ">
             <a
-              href="https://github.com/Qirab14"
+              href="https://github.com/Usman945825"
               className="mr-4 hover:text-gray-700"
             >
               <FaGithub />
             </a>
             <a
-              href="https://www.linkedin.com/in/hafiz-qirab-jaffar-61b248242/"
+              href="https://www.linkedin.com/in/usman-malik-768b4a265/"
               className="mr-4 hover:text-blue-700"
             >
               <FaLinkedin />
@@ -42,7 +42,7 @@ const Footer = () => {
           className="w-[40%] flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 max-md:mt-4 max-sm:mt-4" id="Footer"
         >
           <a
-            href="mailto:qirab14@gmail.com"
+            href="mailto:maniasif666@gmail.com"
             className="flex items-center
             bg-gray-800 hover:bg-gray-700 h-[150px] text-white font-bold py-3 px-8 text-center
              focus:outline-none focus:shadow-outline
